@@ -1,0 +1,31 @@
+[package]
+name = "steam_workshop_downloader_lib"
+version = "0.1.0"
+edition = "2021"
+
+# NOTE: reconstructed from strings inside steam-workshop-downloader_0_zc2y.exe
+# (built with Tauri v2.12.1, Rust, on Windows by user AbolUp).
+# Direct vs transitive dependencies cannot be distinguished from the binary;
+# the list below contains the crates that are certainly (or very likely)
+# direct dependencies. The full extracted list is in RECOVERY_REPORT.md.
+
+[lib]
+name = "steam_workshop_downloader_lib"
+crate-type = ["lib"]
+
+[dependencies]
+tauri = { version = "2.12.1", features = [] }
+rusqlite = { version = "0.32.1", features = ["bundled"] }
+reqwest = { version = "0.12.28", features = ["json", "rustls-tls"] }
+tokio = { version = "1.53.1", features = ["full"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+uuid = { version = "1.26.1", features = ["v4"] }
+zip = "2.4.2"
+chrono = "0.4.45"
+anyhow = "1.0.104"
+url = "2.5.8"
+regex = "1.13.1"
+infer = "0.22.0"
+glob = "0.3.4"
+tracing-subscriber = "0.3.23"
